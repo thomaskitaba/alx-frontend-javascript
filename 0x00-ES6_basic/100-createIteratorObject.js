@@ -1,10 +1,10 @@
 export default function createIteratorObject(report) {
-  let allEmp = [];
-  for (const item of Object.values(report.allEmp)) {
-    allEmp = [
-      ...allEmp,
+  const allEmployees = [];
+  for (const item of Object.values(report.allEmployees)) {
+    allEmployees = [
+      ...allEmployees,
       ...item,
     ];
   }
-  return allEmp;
+  return allEmployees;
 }
