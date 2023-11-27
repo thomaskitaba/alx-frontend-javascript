@@ -1,2 +1,1 @@
-# alx-frontend-javascript
-Alx specialization
+alx frontend specialization
