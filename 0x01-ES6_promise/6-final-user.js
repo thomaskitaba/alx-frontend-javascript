@@ -13,8 +13,3 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     return result;
   });
 }
-// NB;   returned data  by promise.all
-// [
-//     { status: 'fulfilled', value: { firstName: 'Bob', lastName: 'Dylan' } },
-//     { status: 'rejected', reason: Error: bob_dylan.jpg cannot be processed at uploadPhoto ... }
-//   ]
