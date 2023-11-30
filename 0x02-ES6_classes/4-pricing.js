@@ -21,7 +21,7 @@ export default class Pricing {
   }
 
   set amount(amount) {
-    if (typeof amount !== 'string') {
+    if (typeof amount !== 'number') {
       throw new TypeError('Amount must be string');
     }
     this._amount = amount;
