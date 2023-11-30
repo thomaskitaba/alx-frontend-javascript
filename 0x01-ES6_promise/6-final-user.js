@@ -10,7 +10,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     for (const row of data) {
       result.push({ status: row.status, value: row.value || row.reason });
     }
-    return result;
+    console.log(result);
   }).catch((error) => {
     console.log('Error: ', error);
     return [];
