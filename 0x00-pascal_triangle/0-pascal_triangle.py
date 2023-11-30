@@ -1,8 +1,9 @@
-#!/usr/bin/python3
+#!/usr/python3
 """Return list of integers representing the Pascal's triangle of n."""
 
 
 def pascal_triangle(n):
+    """ return 2D array """
     if n <= 0:
         return []
 
