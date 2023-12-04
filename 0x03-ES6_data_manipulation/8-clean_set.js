@@ -30,7 +30,8 @@
                 myArray.push(stringArry.join(''));
             }
     }
-    console.log(myArray);
+
+    console.log(myArray.join('-'));
  }
  cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon');
 //  export default cleanSet;
