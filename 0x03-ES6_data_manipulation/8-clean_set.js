@@ -11,7 +11,7 @@ function cleanSet(set, startString) {
         if (row[i] === startString[i] && i < 3) {
           answer = 1;
           // console.log(row[i]);
-          continue;
+        //   continue;
         }
         if (row[i] !== startString[i] && i < 3) {
           answer = 0;
