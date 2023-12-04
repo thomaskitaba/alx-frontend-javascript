@@ -1,4 +1,4 @@
-function getStudentsByLocation(myArray, myCity) {
-	return myArray.filter((obj) => obj.location === myCity);
+function getStudentsByLocation(myArray, city) {
+  return myArray.filter((obj) => obj.location === city);
 }
 export default getStudentsByLocation;
