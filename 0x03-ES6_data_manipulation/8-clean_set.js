@@ -25,8 +25,8 @@
 
                 }
             }
-            if (answer == 1) {
-                console.log(stringArry);
+            if (answer === 1) {
+                // console.log(stringArry);
                 myArray.push(stringArry.join(''));
             }
     }
@@ -34,34 +34,3 @@
     console.log(myArray.join('-'));
  }
  cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon');
-//  export default cleanSet;
-
-
-// function cleanSet(set, startString) {
-//     const myArray = [];
-//     const stringArry = [];
-//     for (const row of set) {
-//         const temp = new Set(row.toString());
-//         let count = 0;
-//         let answer = 1;
-//         for (const char of temp) {
-//             if (char === startString[count] && count < startString.length) {
-//                 answer = 1;
-//             } else {
-//                 // if (count === startString.length) {
-//                 //     for (let i = count; i < temp.size; i++) {
-//                 //         stringArry.push(char);
-//                 //     }
-//                 // }
-//                 answer = 0;
-//             }
-//             count++;
-//         }
-//         if (answer === 0) {
-//             console.log("match found");
-//         }
-//         console.log(temp);
-//     }
-//  }
-//  cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon');
-// //  export default cleanSet;
