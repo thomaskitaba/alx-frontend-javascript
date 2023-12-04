@@ -5,7 +5,6 @@ class EVcar extends Car {
     super(brand, motor, color);
     this._range = range;
   }
-
   static get [Symbol.species]() {
     return Car;
   }
