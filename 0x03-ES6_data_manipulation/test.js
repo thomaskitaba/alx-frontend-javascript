@@ -18,7 +18,11 @@ const dict = [
     { id: 2, firstName: 'James', location: 'Columbia' },
     { id: 5, firstName: 'Serena', location: 'San Francisco' }
   ]
-
-for (const k in Object.key(dict)) {
+for (let i = 0; i < dict.length; i++) {
+for (const [k] in Object.keys(dict[i])) {
     console.log(k);
+}
+}
+for (const [key, val] in Object.entries(dict)) {
+    console.log(key, val);
 }
