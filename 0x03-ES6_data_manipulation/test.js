@@ -20,7 +20,7 @@ const dict = [
   ]
 for (let i = 0; i < dict.length; i++) {
 for (const [k] in Object.keys(dict[i])) {
-    console.log(k);
+    Object.keys(dict[i]);
 }
 }
 for (const [key, val] in Object.entries(dict)) {
