@@ -1,5 +1,12 @@
 function cleanSet(set, startString) {
   const myArray = [];
+  if (
+    typeof set !== 'object'
+    || typeof startString !== 'string'
+    || startString.length === 0
+  ) {
+    return '';
+  }
 
   for (const row of set) {
     // console.log(row);
@@ -30,7 +37,6 @@ function cleanSet(set, startString) {
       myArray.push(stringArry.join(''));
     }
   }
-
   return myArray.join('-');
 }
 export default cleanSet;
