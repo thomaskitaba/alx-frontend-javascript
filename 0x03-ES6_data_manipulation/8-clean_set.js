@@ -11,7 +11,7 @@ function cleanSet(set, startString) {
   for (const row of set) {
     const stringArry = [];
     let answer = 1;
-    if (startString.length < row.length) {
+    if (startString.length <= row.length) {
       for (let i = 0; i < row.length; i += 1) {
         if (row[i] === startString[i] && i < 3) {
           answer = 1;
