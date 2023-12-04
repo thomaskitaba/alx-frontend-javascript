@@ -1,19 +1,17 @@
 function hasValuesFromArray(mySet, value) {
 //   return value.every((obj) => mySet.has(obj));
-let ans = 1;
-for (const row in value) {
-    if (!mySet.has(row)){
-        ans = 0;
-        break;
+  let ans = 1;
+  for (const row of value) {
+    if (mySet.has(row)) {
+      ans = 1;
+    } else {
+      ans = 0;
+      break;
     }
-    else {
-        ans = 1;
-    }
-}
-if (ans === 1) {
+  }
+  if (ans === 1) {
     return true;
-} else {
-    return false;
-}
+  }
+  return false;
 }
 export default hasValuesFromArray;
