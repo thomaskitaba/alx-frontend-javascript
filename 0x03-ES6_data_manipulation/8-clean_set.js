@@ -10,6 +10,7 @@ function cleanSet(set, startString) {
   const myArray = [];
 
   for (const row of set) {
+    // row is checked incase the set has undifined element
     if (row && startString.length < row.length) {
       let answer = 1;
       const stringArray = [];
