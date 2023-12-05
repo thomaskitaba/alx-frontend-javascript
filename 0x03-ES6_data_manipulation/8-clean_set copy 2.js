@@ -10,7 +10,7 @@ function cleanSet(set, startString) {
   const myArray = [];
 
   for (const row of set) {
-    if (startString.length < row.length) {
+    if (row && startString.length < row.length) {
       let answer = 1;
       let count = 0;
       let stringArray = [];
