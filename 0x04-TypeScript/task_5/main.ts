@@ -8,8 +8,12 @@ interface MinorCredits {
 }
 
 function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits): number{
-    return subject1.credit + subject2.credit;
+    if (subject1.brand == 'Major' && subject2.brand == 'Major') {
+        return subject1.credit + subject2.credit;
+    }
 }
 function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits): number{
-    return subject1.credit + subject2.credit;
+    if (subject1.brand == 'Minor' && subject2.brand == 'Minor') {
+        return subject1.credit + subject2.credit;
+    }
 }
