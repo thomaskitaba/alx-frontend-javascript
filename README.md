@@ -1,1 +1,1 @@
-alx frontend specialization
+alx frontend specialization ECMAscript 6
