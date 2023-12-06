@@ -7,9 +7,9 @@ interface MinorCredits {
     brand: "Minor";
 }
 
-function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits): MajorCredits {
+function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits){
     return subject1.credit + subject2.credit;
 }
-function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits): MinorCredits {
+function sumMinorCredits(subject1: MinorCredits, subject2: MinorCredits){
     return subject1.credit + subject2.credit;
 }
